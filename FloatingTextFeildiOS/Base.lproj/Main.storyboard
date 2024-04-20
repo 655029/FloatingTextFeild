@@ -19,25 +19,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ck-cw-rJ8" customClass="CustomOutlinedTxtField" customModule="FloatingTextFeildiOS" customModuleProvider="target">
                                 <rect key="frame" x="20" y="408.66666666666669" width="353" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjD-e9-d28">
-                                        <rect key="frame" x="315" y="15" width="30" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="1hu-Ij-Xd7"/>
-                                            <constraint firstAttribute="width" constant="30" id="7af-0a-7Ek"/>
-                                        </constraints>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="eye.slash.fill" catalog="system"/>
-                                        <state key="selected" image="eye.fill" catalog="system"/>
-                                        <connections>
-                                            <action selector="eyeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZu-cl-Mhj"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="bob-pe-K2a"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZjD-e9-d28" secondAttribute="trailing" constant="8" id="wTx-XV-wnh"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="primaryColor">
@@ -69,7 +53,6 @@
                             <constraint firstItem="oTQ-Qa-unE" firstAttribute="leading" secondItem="3Ck-cw-rJ8" secondAttribute="leading" id="SaU-XM-zy9"/>
                             <constraint firstItem="oTQ-Qa-unE" firstAttribute="top" secondItem="3Ck-cw-rJ8" secondAttribute="bottom" constant="74.333333333333314" id="UhH-o5-WbG"/>
                             <constraint firstItem="oTQ-Qa-unE" firstAttribute="trailing" secondItem="3Ck-cw-rJ8" secondAttribute="trailing" id="bKv-ef-W5f"/>
-                            <constraint firstItem="ZjD-e9-d28" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fUS-do-V5b"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -79,8 +62,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="eye.fill" catalog="system" width="128" height="80"/>
-        <image name="eye.slash.fill" catalog="system" width="128" height="96"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

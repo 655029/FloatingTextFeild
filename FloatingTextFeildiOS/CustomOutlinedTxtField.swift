@@ -44,6 +44,13 @@ class CustomOutlinedTxtField: UIView {
         textFieldControllerFloating.inlinePlaceholderFont = UIFont.systemFont(ofSize: 14)
         textFieldControllerFloating.textInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
 
+        textField.leftViewMode = .always
+        textField.rightViewMode = .always
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        button.setImage(UIImage(systemName: "eye"), for: .normal)
+        let leadingView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        leadingView.addSubview(button)
+        textField.trailingView = button
         self.addSubview(textField)
     }
 }
